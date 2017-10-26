@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Beidou</string>
+    <string name="connect_quest_bluetooth_not_exist">该手机不存在蓝牙模块</string>
+    <string name="connect_quest_bluetooth_is_disabled">该手机蓝牙未打开</string>
+    <string name="connect_quest_turn_on_bluetooth_succeed">蓝牙开启成功</string>
+    <string name="title_paired_devices">已配对的设备</string>
+    <string name="title_other_devices">新的设备</string>
+    <string name="button_scan">搜索</string>
+    <string name="send">发送</string>
+</resources>
