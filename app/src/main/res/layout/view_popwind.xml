@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_60"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:background="@color/white" android:clickable="true" android:layout_width="0.0dip" android:layout_height="60.0dip" android:layout_weight="1.0">
+        <CheckBox android:layout_gravity="center_vertical" android:id="@id/cb_all_choice" android:background="@drawable/checkbox_selector_popwind" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="@dimen/dimen_16" android:button="@null" />
+        <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/all_select" />
+    </LinearLayout>
+    <TextView android:textColor="@color/black_color" android:gravity="center" android:id="@id/tv_deal" android:background="@drawable/btn_yellow_selector_popwind" android:layout_width="@dimen/dimen_141" android:layout_height="@dimen/dimen_60" android:text="@string/handle" />
+</LinearLayout>

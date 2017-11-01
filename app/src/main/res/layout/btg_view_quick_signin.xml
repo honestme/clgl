@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/btg_quick_signin_item_height" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/btg_global_font_less_big" android:textColor="@color/btg_global_text_blue" android:id="@id/usernameText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/btg_global_margin_large" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/btg_global_margin_large" android:src="@drawable/btg_btn_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:background="@drawable/btg_line_horizontal" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/btg_global_margin_standard" android:layout_below="@id/usernameText" />
+    </RelativeLayout>
+</RelativeLayout>

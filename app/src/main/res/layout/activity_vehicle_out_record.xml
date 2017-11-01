@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/ac2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <etgps.etgps.cn.ui.widget.TitleBar android:id="@id/title_bar" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_44" />
+    <LinearLayout style="@style/driving_logbook_layout">
+        <TextView android:text="@string/out_address" style="@style/driving_logbook_text_style" />
+        <TextView style="@style/driving_logbook_text_star" />
+        <EditText android:id="@id/out_address" android:hint="@string/logbook_plz_fill" android:maxLength="32" style="@style/driving_logbook_edittext" />
+    </LinearLayout>
+    <LinearLayout style="@style/driving_logbook_layout">
+        <TextView android:text="@string/out_time" style="@style/driving_logbook_text_style" />
+        <TextView style="@style/driving_logbook_text_star" />
+        <TextView android:id="@id/out_time" android:hint="@string/logbook_plz_check" style="@style/driving_logbook_edittext" />
+    </LinearLayout>
+    <LinearLayout style="@style/driving_logbook_layout">
+        <TextView android:text="@string/out_distance" style="@style/driving_logbook_text_style" />
+        <TextView style="@style/driving_logbook_text_star" />
+        <EditText android:id="@id/out_distance" android:hint="@string/logbook_plz_fill" android:maxLength="11" android:inputType="number" style="@style/driving_logbook_edittext" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center|right" android:orientation="horizontal" android:padding="@dimen/dimen_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_4">
+        <TextView android:textColor="@color/mc2" android:layout_gravity="right" android:layout_width="wrap_content" android:text="@string/tip_before" style="@style/driving_logbook_text_style" />
+        <TextView android:textColor="@color/redColor" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/tip_star" />
+        <TextView android:textColor="@color/mc2" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/tip_after" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/t2" android:textColor="@color/mc4" android:gravity="center" android:id="@id/save" android:background="@drawable/black_ractangle" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_44" android:layout_marginLeft="12.0dip" android:layout_marginTop="@dimen/dimen_20" android:layout_marginRight="12.0dip" android:text="@string/save" />
+</LinearLayout>

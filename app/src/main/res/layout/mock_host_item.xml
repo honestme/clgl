@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+        <CheckBox android:id="@id/mock_check_api" android:layout_width="35.0dip" android:layout_height="35.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/mock_api_name" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/mock_api_host" android:background="#ff3b3a3a" android:paddingTop="10.0dip" android:paddingRight="5.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" />
+    <View android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="3.0dip" />
+</LinearLayout>

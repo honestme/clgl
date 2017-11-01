@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/middleText" android:layout_width="@dimen/btg_report_tag_state_text_width" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:maxLines="2" android:layout_centerInParent="true" style="@style/btg_global_text_content" />
+    <io.bugtags.ui.view.rounded.CircleImageView android:id="@id/leftImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/middleText" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/rightImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:scaleType="centerInside" android:layout_toRightOf="@id/middleText" android:layout_centerVertical="true" />
+</RelativeLayout>

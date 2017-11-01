@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/ac2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/main_page_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <etgps.etgps.cn.ui.widget.TitleBar android:id="@id/title_bar" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_44" />
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout style="@style/driving_logbook_layout">
+                    <TextView android:text="@string/logbook_label_plate_no" style="@style/driving_logbook_text_style" />
+                    <TextView style="@style/driving_logbook_text_star" />
+                    <TextView android:textSize="@dimen/t3" android:textColor="@color/mc2" android:gravity="center|right" android:id="@id/logbook_vehicle_plate_no" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="@string/logbook_plz_check" android:drawableRight="@mipmap/replay_icon_unfold_down" android:drawablePadding="@dimen/dimen_8" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout style="@style/driving_logbook_layout">
+                    <TextView android:text="@string/logbook_label_driver_name" style="@style/driving_logbook_text_style" />
+                    <TextView style="@style/driving_logbook_text_star" />
+                    <EditText android:id="@id/logbook_driver_name" android:hint="@string/logbook_plz_fill" android:maxLength="16" style="@style/driving_logbook_edittext" />
+                </LinearLayout>
+                <LinearLayout style="@style/driving_logbook_layout">
+                    <TextView android:text="@string/logbook_label_driver_job_no" style="@style/driving_logbook_text_style" />
+                    <TextView style="@style/driving_logbook_text_star" />
+                    <EditText android:id="@id/logbook_driver_job_no" android:hint="@string/logbook_plz_fill" android:maxLength="32" style="@style/driving_logbook_edittext" />
+                </LinearLayout>
+                <LinearLayout style="@style/driving_logbook_layout">
+                    <TextView android:text="@string/logbook_label_vehicle_brand" style="@style/driving_logbook_text_style" />
+                    <TextView android:visibility="invisible" style="@style/driving_logbook_text_star" />
+                    <TextView android:id="@id/logbook_vehicle_brand" android:maxLength="16" style="@style/driving_logbook_edittext" />
+                </LinearLayout>
+                <LinearLayout style="@style/driving_logbook_layout">
+                    <TextView android:text="@string/logbook_label_out_record" style="@style/driving_logbook_text_style" />
+                    <TextView style="@style/driving_logbook_text_star" />
+                    <TextView android:textSize="@dimen/t3" android:textColor="@color/mc2" android:gravity="center|right" android:id="@id/logbook_out_record" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="@string/logbook_unfilled" android:drawableRight="@drawable/btg_btn_right" android:drawablePadding="@dimen/dimen_10" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout style="@style/driving_logbook_layout">
+                    <TextView android:text="@string/logbook_label_in_record" style="@style/driving_logbook_text_style" />
+                    <TextView style="@style/driving_logbook_text_star" />
+                    <TextView android:textSize="@dimen/t3" android:textColor="@color/mc2" android:gravity="center|right" android:id="@id/logbook_in_record" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="@string/logbook_unfilled" android:drawableRight="@drawable/btg_btn_right" android:drawablePadding="@dimen/dimen_10" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout style="@style/driving_logbook_layout">
+                    <TextView android:text="@string/logbook_label_drive_distance" style="@style/driving_logbook_text_style" />
+                    <TextView android:visibility="invisible" style="@style/driving_logbook_text_star" />
+                    <TextView android:id="@id/logbook_drive_distance" android:maxLength="11" style="@style/driving_logbook_edittext" />
+                    <TextView android:textColor="@color/mc2" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/eng_km" />
+                </LinearLayout>
+                <LinearLayout android:layout_marginTop="20.0dip" style="@style/driving_logbook_layout">
+                    <TextView android:text="@string/logbook_label_fuel_record" style="@style/driving_logbook_text_style" />
+                    <TextView android:visibility="invisible" style="@style/driving_logbook_text_star" />
+                    <TextView android:textSize="@dimen/t3" android:textColor="@color/mc2" android:gravity="center|right" android:id="@id/logbook_fuel_record" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="@string/logbook_unfilled" android:drawableRight="@drawable/btg_btn_right" android:drawablePadding="@dimen/dimen_10" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout style="@style/driving_logbook_layout">
+                    <TextView android:text="@string/logbook_label_cost_record" style="@style/driving_logbook_text_style" />
+                    <TextView android:visibility="invisible" style="@style/driving_logbook_text_star" />
+                    <TextView android:textSize="@dimen/t3" android:textColor="@color/mc2" android:gravity="center|right" android:id="@id/logbook_cost_record" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="@string/logbook_unfilled" android:drawableRight="@drawable/btg_btn_right" android:drawablePadding="@dimen/dimen_10" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center|right" android:orientation="horizontal" android:padding="@dimen/dimen_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_4">
+                    <TextView android:textColor="@color/mc2" android:layout_gravity="right" android:layout_width="wrap_content" android:text="@string/tip_before" style="@style/driving_logbook_text_style" />
+                    <TextView android:textColor="@color/redColor" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/tip_star" />
+                    <TextView android:textColor="@color/mc2" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/tip_after" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <TextView android:textSize="@dimen/t2" android:textColor="@color/mc4" android:gravity="center" android:id="@id/logbook_save" android:background="@drawable/black_ractangle" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_44" android:layout_marginLeft="12.0dip" android:layout_marginTop="@dimen/dimen_20" android:layout_marginRight="12.0dip" android:text="@string/save" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/search_cars_layout" android:background="@color/mc4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <etgps.etgps.cn.ui.widget.TitleBar android:id="@id/search_title_bar" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_44" />
+        <TextView android:textSize="@dimen/t1" android:textColor="@color/mc2" android:gravity="center" android:id="@id/no_data_tip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/unsearched_vehicle_data" />
+        <ListView android:id="@id/show_cars" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</FrameLayout>

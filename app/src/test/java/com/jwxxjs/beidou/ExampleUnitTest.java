@@ -1,4 +1,4 @@
-package com.jwxxjs.beidou;
+package com.jwxxjs.clgl;
 
 import org.junit.Test;
 

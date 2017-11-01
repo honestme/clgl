@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/tab_re"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/main_tab_iv" android:layout_marginTop="5.0dip" android:src="@drawable/tab_grap" android:contentDescription="@null" style="@style/tab_iv" />
+            <TextView android:textStyle="bold" android:id="@id/main_tab_num" android:visibility="visible" android:text="@string/new_main" android:layout_toRightOf="@id/main_tab_iv" style="@style/tab_tv_num" />
+        </RelativeLayout>
+    </FrameLayout>
+    <TextView android:id="@id/main_tab_name" android:layout_below="@id/main_tab_iv" style="@style/tab_tv_name" />
+</LinearLayout>

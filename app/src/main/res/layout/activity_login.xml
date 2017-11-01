@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/backgroundColor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:background="@color/theme_color" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_182">
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_48" android:layout_marginBottom="@dimen/dimen_58" android:src="@mipmap/login_logo" android:contentDescription="@null" />
+    </LinearLayout>
+    <View style="@style/line_horizontal" />
+    <LinearLayout android:gravity="center" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_53" android:layout_marginTop="@dimen/dimen_44">
+        <TextView android:drawableLeft="@mipmap/login_icon_user" style="@style/textBindEditStyle" />
+        <EditText android:textSize="16.0sp" android:textColorHighlight="@color/colorPrimary" android:textColorHint="@color/login_edtit_hint" android:id="@id/edit_user" android:hint="@string/login_user" android:singleLine="true" style="@style/editStyle" />
+    </LinearLayout>
+    <View style="@style/line_horizontal" />
+    <LinearLayout android:gravity="center" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_53">
+        <TextView android:drawableLeft="@mipmap/login_icon_password" style="@style/textBindEditStyle" />
+        <EditText android:textSize="16.0sp" android:textColorHighlight="@color/colorPrimary" android:textColorHint="@color/login_edtit_hint" android:id="@id/edit_pwd" android:hint="@string/login_pwd" android:singleLine="true" android:inputType="textPassword" style="@style/editStyle" />
+    </LinearLayout>
+    <View style="@style/line_horizontal" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <CheckBox android:textSize="14.0sp" android:textColor="@color/login_checkbox" android:id="@id/cb_rember_pwd" android:paddingLeft="4.0dip" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:layout_marginTop="@dimen/dimen_10" android:text="@string/login_remeber_pwd" style="@style/CustomCheckboxTheme" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/red_color" android:id="@id/tv_red_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10" android:layout_centerHorizontal="true" />
+        <Button android:textSize="20.0sp" android:textColor="@color/white_color" android:id="@id/btn_commit" android:background="@drawable/btn_bgd_seletor_black" android:layout_width="@dimen/dimen_330" android:layout_height="@dimen/dimen_44" android:layout_marginTop="@dimen/dimen_40" android:text="@string/login_login" android:layout_below="@id/cb_rember_pwd" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/login_checkbox" android:textColorLink="@color/login_call" android:autoLink="phone" android:id="@id/tv_call" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_14" android:text="@string/public_call" android:layout_below="@id/btn_commit" android:layout_centerHorizontal="true" />
+        <Button android:textSize="16.0sp" android:textColor="@color/login_demo" android:id="@id/btn_demo" android:background="@drawable/btn_bgd_seletor_white" android:layout_width="@dimen/dimen_202" android:layout_height="@dimen/dimen_40" android:layout_marginBottom="@dimen/dimen_15" android:text="@string/login_demo" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

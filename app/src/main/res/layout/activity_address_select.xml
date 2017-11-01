@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/header" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/header">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/search_view" android:background="@drawable/btn_disable" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip">
+            <TextView android:textSize="@dimen/font_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:hint="搜索地址" android:drawableLeft="@drawable/search_icon" android:drawablePadding="5.0dip" />
+        </LinearLayout>
+        <ListView android:id="@id/province_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="#00000000" android:dividerHeight="0.0dip" />
+    </LinearLayout>
+    <com.wlqq.widget.addresslayout.AddressSearchView android:id="@id/search_control_layout" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ListView android:id="@id/province_and_city_list" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="#00000000" android:dividerHeight="0.0dip" android:layout_below="@id/header" />
+</RelativeLayout>

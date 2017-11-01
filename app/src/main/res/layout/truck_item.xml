@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/rl_item" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_5"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_truck_plate" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_35" android:layout_marginLeft="@dimen/dimen_15">
+        <TextView android:textSize="16.0sp" android:textColor="@color/half_alpha_color" android:gravity="center_vertical" android:id="@id/tv_truck_plate" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/login_checkbox" android:gravity="center_vertical" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/dimen_20" android:text="" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View android:id="@id/v_h" android:layout_below="@id/rl_truck_plate" style="@style/line_horizontal" />
+    <TextView android:id="@id/tv_driver" android:layout_marginTop="@dimen/dimen_8" android:text="" android:layout_below="@id/v_h" style="@style/item_text" />
+    <TextView android:id="@id/tv_milage" android:layout_marginLeft="@dimen/dimen_165" android:layout_marginTop="@dimen/dimen_8" android:text="" android:layout_below="@id/tv_status" style="@style/item_text" />
+    <TextView android:id="@id/tv_speed" android:layout_marginTop="@dimen/dimen_8" android:text="" android:layout_below="@id/tv_driver" style="@style/item_text" />
+    <TextView android:id="@id/tv_stop" android:layout_marginTop="@dimen/dimen_8" android:text="" android:layout_below="@id/tv_speed" style="@style/item_text" />
+    <TextView android:id="@id/tv_status" android:layout_marginLeft="@dimen/dimen_165" android:layout_marginTop="@dimen/dimen_8" android:text="" android:layout_below="@id/v_h" style="@style/item_text" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_15" android:layout_below="@id/tv_stop">
+        <ImageView android:id="@id/iv_loction" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_25" android:layout_marginLeft="@dimen/dimen_15" android:src="@mipmap/home_icon_location" android:layout_below="@id/tv_status" android:contentDescription="@null" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/btn_normal_color_balck" android:id="@id/tv_loction" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_3" android:layout_marginRight="@dimen/dimen_15" android:singleLine="true" android:layout_toRightOf="@id/iv_loction" />
+    </LinearLayout>
+    <TextView android:layout_width="fill_parent" android:layout_height="@dimen/dimen_15" android:layout_below="@id/ll" />
+    <ImageView android:id="@id/iv_paly" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="@dimen/dimen_10" android:layout_marginTop="@dimen/dimen_24" android:layout_marginRight="@dimen/dimen_10" android:src="@mipmap/icon_more_m" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+</RelativeLayout>

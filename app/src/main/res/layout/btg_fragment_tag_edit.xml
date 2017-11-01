@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/btg_global_translucent_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/btg_bg_dialog" android:clickable="true" android:layout_width="@dimen/btg_report_dialog_width" android:layout_height="@dimen/btg_report_dialog_height" android:layout_marginTop="@dimen/btg_report_dialog_margin_top" android:layout_centerHorizontal="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/topView" android:layout_width="wrap_content" android:layout_height="@dimen/btg_report_top_height" android:weightSum="3.0">
+            <io.bugtags.ui.view.report.TagTypeView android:id="@id/typeView" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <View android:background="@drawable/btg_line_vertical" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <io.bugtags.ui.view.report.TagPriorityView android:id="@id/priorityView" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <View android:background="@drawable/btg_line_vertical" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <io.bugtags.ui.view.report.TagAssigneeView android:id="@id/assigneeView" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/bottomView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/btg_global_margin_standard" android:layout_marginRight="@dimen/btg_global_margin_standard" android:layout_marginBottom="@dimen/btg_global_margin_standard" android:layout_alignParentBottom="true">
+            <Button android:id="@id/cancelButton" android:background="@drawable/btg_btn_white_rect" android:layout_width="@dimen/btg_report_dialog_btn_width" android:layout_height="@dimen/btg_report_dialog_btn_height" android:text="@string/btg_global_cancel" android:layout_weight="1.0" style="@style/btg_global_text_btn_negative" />
+            <Button android:id="@id/finishButton" android:background="@drawable/btg_btn_blue_rect" android:layout_width="@dimen/btg_report_dialog_btn_width" android:layout_height="@dimen/btg_report_dialog_btn_height" android:layout_marginLeft="@dimen/btg_global_margin_standard" android:text="@string/btg_global_confirm" android:layout_weight="1.0" style="@style/btg_global_text_btn_positive" />
+        </LinearLayout>
+        <EditText android:textSize="@dimen/btg_global_font_big" android:gravity="center|left|top" android:id="@id/desText" android:background="@android:color/transparent" android:padding="@dimen/btg_global_margin_standard" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/btg_report_tag_hint" android:layout_above="@id/bottomView" android:layout_below="@id/topView" />
+        <View android:background="@drawable/btg_line_horizontal" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/topView" />
+        <io.bugtags.ui.view.report.TagPriorityPickView android:id="@id/priorityPickView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/btg_report_dialog_picker_height" android:layout_centerInParent="true" />
+        <io.bugtags.ui.view.HorizontalListView android:id="@id/assigneeListView" android:background="@android:color/white" android:padding="@dimen/btg_global_margin_tiny" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/btg_report_dialog_picker_height" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

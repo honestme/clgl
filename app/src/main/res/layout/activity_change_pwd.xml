@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <etgps.etgps.cn.ui.widget.TitleBar android:id="@id/title_bar" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_44" />
+    <LinearLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_44" android:layout_marginTop="@dimen/dimen_10">
+        <TextView android:textSize="16.0sp" android:textColor="@color/login_demo" android:layout_gravity="center" android:layout_width="@dimen/dimen_90" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:text="@string/current_password_notice" />
+        <EditText android:layout_gravity="center" android:id="@id/edt_old_pwd" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10" android:inputType="textPassword" />
+    </LinearLayout>
+    <LinearLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_44" android:layout_marginTop="@dimen/dimen_10">
+        <TextView android:textSize="16.0sp" android:textColor="@color/login_demo" android:layout_gravity="center" android:layout_width="@dimen/dimen_90" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:text="@string/new_password_notice" />
+        <EditText android:layout_gravity="center" android:id="@id/edt_new_pwd" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:inputType="textPassword" />
+    </LinearLayout>
+    <LinearLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_44" android:layout_marginTop="1.0px">
+        <TextView android:textSize="16.0sp" android:textColor="@color/login_demo" android:layout_gravity="center" android:layout_width="@dimen/dimen_90" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:text="@string/agin_password_notice" />
+        <EditText android:layout_gravity="center" android:id="@id/edt_again_pwd" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10" android:inputType="textPassword" />
+    </LinearLayout>
+    <TextView android:textColor="@color/redColor" android:layout_gravity="center" android:id="@id/tv_red_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="@dimen/dimen_15" />
+</LinearLayout>

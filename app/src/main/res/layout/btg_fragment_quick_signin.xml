@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/btg_global_translucent_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/btg_bg_dialog" android:padding="@dimen/btg_global_margin_large" android:clickable="true" android:layout_width="@dimen/btg_login_dialog_width" android:layout_height="@dimen/btg_quick_signin_height" android:layout_marginTop="@dimen/btg_report_dialog_margin_top" android:layout_centerHorizontal="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageButton android:id="@id/leftImage" android:background="@color/btg_global_transparent" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/btg_btn_left" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="@dimen/btg_global_font_large" android:textColor="@color/btg_global_black_title" android:id="@id/titleText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/btg_quick_signin_title" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="@dimen/btg_global_font_standard" android:textColor="@color/btg_global_black_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/btg_global_margin_tiny" android:text="@string/btg_quick_signin_desc" android:layout_below="@id/titleText" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <ListView android:id="@id/listView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/btg_global_margin_standard" android:divider="@color/btg_global_transparent" />
+    </LinearLayout>
+</RelativeLayout>

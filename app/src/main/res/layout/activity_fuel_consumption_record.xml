@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/ac2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <etgps.etgps.cn.ui.widget.TitleBar android:id="@id/title_bar" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_44" />
+    <LinearLayout android:id="@id/fuel_type_layout" style="@style/driving_logbook_layout">
+        <TextView android:text="@string/fuel_type" style="@style/driving_logbook_text_style" />
+        <TextView style="@style/driving_logbook_text_star" />
+        <TextView android:textSize="@dimen/t3" android:textColor="@color/mc2" android:gravity="center|right" android:id="@id/fuel_card_type" android:paddingRight="@dimen/dimen_12" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="@string/logbook_plz_check" android:drawableRight="@mipmap/replay_icon_unfold_down" android:drawablePadding="@dimen/dimen_20" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout style="@style/driving_logbook_layout">
+        <TextView android:text="@string/fuel_card_no" style="@style/driving_logbook_text_style" />
+        <TextView android:visibility="invisible" style="@style/driving_logbook_text_star" />
+        <TextView android:id="@id/fuel_card_no" android:layout_marginRight="@dimen/dimen_40" android:maxLength="16" style="@style/driving_logbook_edittext" />
+    </LinearLayout>
+    <LinearLayout android:layout_marginTop="20.0dip" style="@style/driving_logbook_layout">
+        <TextView android:text="@string/fuel_time" style="@style/driving_logbook_text_style" />
+        <TextView android:visibility="invisible" style="@style/driving_logbook_text_star" />
+        <TextView android:id="@id/fuel_time" android:layout_marginRight="@dimen/dimen_40" android:hint="@string/logbook_plz_check" style="@style/driving_logbook_edittext" />
+    </LinearLayout>
+    <LinearLayout style="@style/driving_logbook_layout">
+        <TextView android:text="@string/fuel_distance" style="@style/driving_logbook_text_style" />
+        <TextView android:visibility="invisible" style="@style/driving_logbook_text_star" />
+        <EditText android:id="@id/fuel_distance" android:hint="@string/logbook_plz_fill" android:maxLength="11" android:inputType="numberDecimal" style="@style/driving_logbook_edittext" />
+        <TextView android:textColor="@color/mc2" android:gravity="center|right" android:layout_width="@dimen/dimen_40" android:layout_height="wrap_content" android:text="@string/eng_km" />
+    </LinearLayout>
+    <LinearLayout style="@style/driving_logbook_layout">
+        <TextView android:text="@string/fuel_liter" style="@style/driving_logbook_text_style" />
+        <TextView android:visibility="invisible" style="@style/driving_logbook_text_star" />
+        <EditText android:id="@id/fuel_liter" android:hint="@string/logbook_plz_fill" android:maxLength="6" android:inputType="numberDecimal" style="@style/driving_logbook_edittext" />
+        <TextView android:textColor="@color/mc2" android:gravity="center|right" android:layout_width="@dimen/dimen_40" android:layout_height="wrap_content" android:text="@string/l" />
+    </LinearLayout>
+    <LinearLayout style="@style/driving_logbook_layout">
+        <TextView android:text="@string/fuel_price" style="@style/driving_logbook_text_style" />
+        <TextView android:visibility="invisible" style="@style/driving_logbook_text_star" />
+        <EditText android:id="@id/fuel_price" android:hint="@string/logbook_plz_fill" android:maxLength="6" android:inputType="numberDecimal" style="@style/driving_logbook_edittext" />
+        <TextView android:textColor="@color/mc2" android:gravity="center|right" android:layout_width="@dimen/dimen_40" android:layout_height="wrap_content" android:text="@string/l_rmb" />
+    </LinearLayout>
+    <LinearLayout style="@style/driving_logbook_layout">
+        <TextView android:text="@string/fuel_total_price" style="@style/driving_logbook_text_style" />
+        <TextView android:visibility="invisible" style="@style/driving_logbook_text_star" />
+        <TextView android:id="@id/fuel_total_price" android:maxLength="11" style="@style/driving_logbook_edittext" />
+        <TextView android:textColor="@color/mc2" android:gravity="center|right" android:layout_width="@dimen/dimen_40" android:layout_height="wrap_content" android:text="@string/rmb" />
+    </LinearLayout>
+    <LinearLayout style="@style/driving_logbook_layout">
+        <TextView android:text="@string/fuel_consumption_per_100" style="@style/driving_logbook_text_style" />
+        <TextView android:visibility="invisible" style="@style/driving_logbook_text_star" />
+        <EditText android:id="@id/fuel_consumption_per_100" android:hint="@string/logbook_plz_fill" android:maxLength="6" android:inputType="numberDecimal" style="@style/driving_logbook_edittext" />
+        <TextView android:textColor="@color/mc2" android:gravity="center|right" android:layout_width="@dimen/dimen_40" android:layout_height="wrap_content" android:text="@string/rmb" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center|right" android:orientation="horizontal" android:padding="@dimen/dimen_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_4">
+        <TextView android:textColor="@color/mc2" android:layout_gravity="right" android:layout_width="wrap_content" android:text="@string/tip_before" style="@style/driving_logbook_text_style" />
+        <TextView android:textColor="@color/redColor" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/tip_star" />
+        <TextView android:textColor="@color/mc2" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/tip_after" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/t2" android:textColor="@color/mc4" android:gravity="center" android:id="@id/save" android:background="@drawable/black_ractangle" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_44" android:layout_marginLeft="12.0dip" android:layout_marginTop="@dimen/dimen_20" android:layout_marginRight="12.0dip" android:text="@string/dialog_ok" />
+</LinearLayout>

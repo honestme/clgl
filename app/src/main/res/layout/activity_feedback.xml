@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <etgps.etgps.cn.ui.widget.TitleBar android:id="@id/title_bar" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_44" />
+    <EditText android:textColorHint="@color/grayShallowColor" android:gravity="start" android:id="@id/edit_feedback" android:background="@color/white" android:padding="@dimen/activity_horizontal_margin" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_125" android:layout_marginTop="@dimen/dimen_5" android:hint="@string/input_face_bank_hit" />
+    <TextView android:textColor="@color/redColor" android:layout_gravity="center" android:id="@id/tv_red_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="@dimen/dimen_15" />
+</LinearLayout>
