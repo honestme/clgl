@@ -9,4 +9,5 @@ import com.jwxxjs.clgl.mvp.BasePresenterImpl;
 
 public class UserPresenter extends BasePresenterImpl<UserContract.View> implements UserContract.Presenter{
 
+
 }
