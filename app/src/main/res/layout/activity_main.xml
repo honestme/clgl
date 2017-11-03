@@ -1,25 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:background="@color/backgroundColor" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <FrameLayout android:id="@id/main_tab_content" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
-    <View style="@style/line_horizontal" />
-    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <include layout="@layout/include_main_tab" />
-        <LinearLayout android:id="@id/ll_bottom" android:background="@color/login_demo" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_54">
-            <LinearLayout android:gravity="center" android:id="@id/ll_truck_detail" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
-                <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_mes" android:contentDescription="@null" />
-                <TextView android:textColor="@color/white" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/vehicle_info" />
-            </LinearLayout>
-            <ImageView android:background="@color/backgroundColor" android:layout_width="1.0px" android:layout_height="fill_parent" android:contentDescription="@null" />
-            <LinearLayout android:gravity="center" android:id="@id/ll_truck_trail" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
-                <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_truck_log" android:contentDescription="@null" />
-                <TextView android:textColor="@color/white" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/traffic_log" />
-            </LinearLayout>
-            <ImageView android:background="@color/backgroundColor" android:layout_width="1.0px" android:layout_height="fill_parent" android:contentDescription="@null" />
-            <LinearLayout android:gravity="center" android:id="@id/ll_truck_paly" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
-                <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_trace_play" android:contentDescription="@null" />
-                <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/tv_deal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/track_playback" />
-            </LinearLayout>
-        </LinearLayout>
-    </FrameLayout>
+<LinearLayout android:orientation="vertical"
+    android:background="@color/backgroundColor"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.TabLayout
+        android:id="@id/main_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabSelectedTextColor="@android:color/holo_orange_light"
+        app:tabTextColor="@color/colorPrimary"
+        app:tabMode="scrollable"
+        app:tabGravity="center"
+        app:tabIndicatorHeight="0dp"
+
+        />
+    <android.support.v4.view.ViewPager
+        android:id="@id/main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 </LinearLayout>

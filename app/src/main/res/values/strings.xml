@@ -59,6 +59,9 @@
     <string name="listview_header_hint_normal">下拉刷新</string>
     <string name="listview_header_hint_release">释放立即刷新</string>
     <string name="listview_header_last_time">上次更新时间：</string>
+    <string name="tablayout_tab_vehicle">车辆</string>
+    <string name="tablayout_tab_message">信息</string>
+    <string name="tablayout_tab_user">用户</string>
     <string name="listview_loading">正在加载</string>
     <string name="nomore_loading">无更多数据</string>
     <string name="refresh_done">刷新完成</string>
@@ -271,7 +274,7 @@
     <string name="dialog_fragment_tag">dialog</string>
     <string name="dialog_ok">确定</string>
     <string name="dialog_tip">提示</string>
-    <string name="dialog_title">确定退出货车帮吗？</string>
+    <string name="dialog_title">确定退出货吗？</string>
     <string name="direction_notice">方向:</string>
     <string name="dirver_record_notice">只可查看6月20号之后的日志</string>
     <string name="discon_network_conn">网络连接断开</string>

@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout android:orientation="vertical" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <etgps.etgps.cn.ui.widget.TitleBar android:id="@id/title_bar" android:layout_width="fill_parent" android:layout_height="44.0dip" />
-    <etgps.etgps.cn.ui.widget.SearchView android:layout_gravity="center" android:id="@id/searchview" android:layout_width="@dimen/dimen_260" android:layout_height="@dimen/dimen_35" android:layout_marginTop="@dimen/dimen_5" android:layout_marginBottom="@dimen/dimen_5" android:layout_centerInParent="true" />
     <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
         <include layout="@layout/include_text_null" />
-        <com.jcodecraeer.xrecyclerview.XRecyclerView android:id="@id/message_recyclerview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
     </FrameLayout>
 </LinearLayout>

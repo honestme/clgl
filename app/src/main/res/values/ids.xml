@@ -338,10 +338,8 @@
     <item type="id" name="current_city_text">false</item>
     <item type="id" name="common_city_layout">false</item>
     <item type="id" name="common_city_list_item">false</item>
-    <item type="id" name="tabview_garage">false</item>
-    <item type="id" name="tabview_message">false</item>
-    <item type="id" name="tabview_personal">false</item>
-    <item type="id" name="tabview">false</item>
+    <item type="id" name="main_tab">false</item>
+    <item type="id" name="main_viewpager">false</item>
     <item type="id" name="null_view">false</item>
     <item type="id" name="ll_item">false</item>
     <item type="id" name="imageView2">false</item>

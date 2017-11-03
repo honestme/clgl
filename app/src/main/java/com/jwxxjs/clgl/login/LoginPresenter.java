@@ -1,10 +1,14 @@
 package com.jwxxjs.clgl.login;
 
-import com.jwxxjs.clgl.base.BasePresenter;
+import android.content.Context;
+
+import com.jwxxjs.clgl.mvp.BasePresenterImpl;
 
 /**
- * Created by Administrator on 2017/10/16 0016.
+ * MVPPlugin
+ *  邮箱 784787081@qq.com
  */
 
-public class LoginPresenter extends BasePresenter<ILoginView> implements ILoginPresenter {
+public class LoginPresenter extends BasePresenterImpl<LoginContract.View> implements LoginContract.Presenter{
+    
 }

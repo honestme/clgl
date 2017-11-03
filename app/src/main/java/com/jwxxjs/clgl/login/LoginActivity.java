@@ -1,27 +1,35 @@
 package com.jwxxjs.clgl.login;
 
+
 import android.content.ComponentName;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
-import com.hcb.clgl.R;
-import com.jwxxjs.clgl.base.BaseActivity;
+import com.jwxxjs.clgl.R;
 import com.jwxxjs.clgl.main.MainActivity;
+import com.jwxxjs.clgl.mvp.MVPBaseActivity;
 
 import butterknife.BindView;
 import butterknife.OnClick;
 
+
 /**
- * Created by Administrator on 2017/10/16 0016.
+ * MVPPlugin
+ *  邮箱 784787081@qq.com
  */
 
-public class LoginActivity extends BaseActivity<ILoginView,LoginPresenter> implements ILoginView{
+public class LoginActivity extends MVPBaseActivity<LoginContract.View, LoginPresenter> implements LoginContract.View {
 
     //UI控件
-    @NonNull @BindView(R.id.btn_commit) Button mBtnLogIn;
+    @NonNull
+    @BindView(R.id.btn_commit)
+    Button mBtnLogIn;
+    @NonNull @BindView(R.id.edit_user)
+    EditText mEditTextUser;
+    @NonNull @BindView(R.id.edit_pwd) EditText mEditTextPwd;
 
     //初始化
     @Override
@@ -44,7 +52,6 @@ public class LoginActivity extends BaseActivity<ILoginView,LoginPresenter> imple
 
 
 
-
     //重载方法
     @NonNull
     @Override
@@ -56,5 +63,4 @@ public class LoginActivity extends BaseActivity<ILoginView,LoginPresenter> imple
     protected int getContentViewId() {
         return R.layout.activity_login;
     }
-
 }
