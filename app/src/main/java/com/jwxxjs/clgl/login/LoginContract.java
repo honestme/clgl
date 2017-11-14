@@ -12,10 +12,20 @@ import com.jwxxjs.clgl.mvp.BaseView;
 
 public class LoginContract {
     interface View extends BaseView {
-        public void logIn();
+        public void login();
+
+        public void forgotPassword();
+
+        public void loginFailed(int code);
     }
 
     interface  Presenter extends BasePresenter<View> {
-        
+        public int login(String userName,String password);
+
+        public void forgotPassword();
+
+        public int checkoutInput(String userName);
+
+        public void rememberPassword(String pwd);
     }
 }

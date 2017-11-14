@@ -1,7 +1,9 @@
 package com.jwxxjs.clgl.mvp;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.util.Log;
 
 import com.hannesdorfmann.mosby3.mvp.MvpActivity;
 
@@ -20,6 +22,14 @@ public abstract class MVPBaseActivity<V extends BaseView,P extends com.jwxxjs.cl
         setContentView(getContentViewId());
         ButterKnife.bind(this);
         initAllMembers(savedInstanceState);
+        ActivityCollector.addActivity(this);
+        Log.d("BaseActivity",getClass().getSimpleName());
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        ActivityCollector.removeActivity(this);
     }
 
     //抽象函数

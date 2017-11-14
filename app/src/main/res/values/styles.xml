@@ -1,10 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Base.Widget.AppCompat.DrawerArrowToggle" parent="@style/Base.Widget.AppCompat.DrawerArrowToggle.Common">
-        <item name="drawableSize">24.0dip</item>
-        <item name="gapBetweenBars">3.0dip</item>
-        <item name="barLength">18.0dip</item>
+    <style name="settings_wrap_layout">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:padding">1dp</item>
+        <item name="android:background">@color/backgroud_color</item>
     </style>
+
+    <style name="settings_base_layout">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="settings_top_layout" parent="settings_base_layout">
+        <item name="android:background">@drawable/settings_top_layout_selector</item>
+    </style>
+    <style name="settings_middle_layout" parent="settings_base_layout">
+        <item name="android:background">@drawable/settings_middle_layout_selector</item>
+    </style>
+    <style name="settings_bottom_layout" parent="settings_base_layout">
+        <item name="android:background">@drawable/settings_bottom_layout_selector</item>
+    </style>
+    <style name="settings_single_layout" parent="settings_base_layout">
+        <item name="android:background">@drawable/settings_single_layout_selector</item>
+    </style>
+
+    <style name="settings_textview">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/black_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="settings_imageview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/settings_image_icon</item>
+    </style>
+    <style name="settings_divide_line">
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/black_color</item>
+    </style>
+
+    <style name="top_layout">
+        <item name="android:background">@drawable/region_list_selector</item>
+    </style>
+
     <style name="Base.Theme.AppCompat.DialogWhenLarge" parent="@style/Theme.AppCompat" />
     <style name="Base.Theme.AppCompat.Light.DialogWhenLarge" parent="@style/Theme.AppCompat.Light" />
     <style name="Base.Widget.AppCompat.Spinner.Underlined" parent="@style/Base.Widget.AppCompat.Spinner">
@@ -116,6 +168,14 @@
         <item name="android:colorBackgroundCacheHint">@color/abc_background_cache_hint_selector_material_light</item>
     </style>
     <style name="Platform.Widget.AppCompat.Spinner" parent="@android:style/Widget.Spinner" />
+    <style name="CustomTabPageIndicator.Text" parent="android:TextAppearance.Medium">
+        <item name="android:typeface">monospace</item>
+    </style>
+    <style name="main_tab_style" parent="@style/Widget.Design.TabLayout">
+        <item name="android:background">@android:color/white</item>
+        <item name="tabIndicatorColor">?colorAccent</item>
+        <item name="tabIndicatorHeight">0.0dip</item>
+    </style>
     <style name="Base.Widget.AppCompat.AutoCompleteTextView" parent="@style/Base.V7.Widget.AppCompat.AutoCompleteTextView" />
     <style name="Base.Widget.AppCompat.EditText" parent="@style/Base.V7.Widget.AppCompat.EditText" />
     <style name="Base.TextAppearance.AppCompat.Button" parent="@style/Base.TextAppearance.AppCompat">

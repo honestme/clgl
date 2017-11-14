@@ -182,8 +182,8 @@
     <string name="com_wlqq_plugin_wallet">钱包</string>
     <string name="common_city">常用城市</string>
     <string name="company_address">地        址:</string>
-    <string name="company_address_detail">贵州省贵阳市经济技术开发区花溪大道中道581号（电商谷）</string>
-    <string name="company_name">贵阳货车帮科技有限公司</string>
+    <string name="company_address_detail">荥阳市康泰路与惠民路交叉口向南50米建设局北配楼4楼</string>
+    <string name="company_name">河南海格经纬信息技术有限公司</string>
     <string name="company_tel">0851-88666156</string>
     <string name="compressing">压缩中...</string>
     <string name="confirm_password">确认密码:</string>
@@ -467,7 +467,8 @@
     <string name="login_ok">登录成功</string>
     <string name="login_pwd">密码</string>
     <string name="login_remeber_pwd">记住密码</string>
-    <string name="login_user">用户名/车牌号</string>
+    <string name="login_forgot_pwd">忘记密码？</string>
+    <string name="login_user">用户名</string>
     <string name="look_forward">敬请期待</string>
     <string name="mail">企业邮箱:</string>
     <string name="mail_detail">admin@etgps.cn</string>

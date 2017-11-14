@@ -340,6 +340,7 @@
     <item type="id" name="common_city_list_item">false</item>
     <item type="id" name="main_tab">false</item>
     <item type="id" name="main_viewpager">false</item>
+    <item type="id" name="change_pwd_done">false</item>
     <item type="id" name="null_view">false</item>
     <item type="id" name="ll_item">false</item>
     <item type="id" name="imageView2">false</item>

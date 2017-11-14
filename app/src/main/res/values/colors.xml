@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="home_bar_text_normal">#6a6c6f</color>
+    <color name="home_bar_text_push">#ff5959</color>
+    <color name="textnormal">#adadad</color>
+
+    <color name="btn_bg_pressed_color">#ffacac</color>
+    <color name="btn_bg_color">#ff5959</color>
+
     <color name="abc_input_method_navigation_guard">@android:color/black</color>
     <color name="abc_search_url_text_normal">#ff7fa87f</color>
     <color name="abc_search_url_text_pressed">@android:color/black</color>
