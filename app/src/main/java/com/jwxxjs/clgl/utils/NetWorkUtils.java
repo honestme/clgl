@@ -60,7 +60,6 @@ public class NetWorkUtils {
                 (networkInfo = manager.getActiveNetworkInfo()) == null) {
             return type;
         }
-        ;
 
         if (networkInfo.isConnected()) {
             String typeName = networkInfo.getTypeName();
@@ -686,9 +685,7 @@ public class NetWorkUtils {
     public static boolean isWifiOpen(Context context) throws Exception {
         int wifiState = getWifiState(context);
         return wifiState == WifiManager.WIFI_STATE_ENABLED ||
-                wifiState == WifiManager.WIFI_STATE_ENABLING
-                ? true
-                : false;
+                wifiState == WifiManager.WIFI_STATE_ENABLING;
     }
 
 

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="horizontal" android:background="@color/new_yellow" android:layout_width="fill_parent" android:layout_height="@dimen/wlqq_title_bar_height"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/title_size" android:textColor="@color/text_default" android:gravity="center" android:id="@id/back" android:paddingLeft="@dimen/spacing_side" android:paddingRight="@dimen/spacing_normal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/cancel" android:drawableLeft="@drawable/icon_nav_arrow_back" android:drawablePadding="@dimen/title_icon_padding" />
-    <TextView android:textSize="@dimen/title_size" android:textColor="@color/text_default" android:gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0" />
-    <TextView android:textSize="@dimen/title_size" android:textColor="@color/text_default" android:gravity="center" android:id="@id/save" android:paddingLeft="@dimen/spacing_normal" android:paddingRight="@dimen/spacing_side" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/save" />
-</LinearLayout>

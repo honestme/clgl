@@ -4,7 +4,7 @@ import com.hannesdorfmann.mosby3.mvp.MvpPresenter;
 
 /**
  * MVPPlugin
- *  邮箱 784787081@qq.com
+ *  邮箱 1151934910@qq.com
  */
 
 public interface BasePresenter<P extends BaseView> extends MvpPresenter<P> {

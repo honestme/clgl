@@ -6,7 +6,7 @@ import com.jwxxjs.clgl.mvp.BasePresenterImpl;
 
 /**
  * MVPPlugin
- *  邮箱 784787081@qq.com
+ *  邮箱 1151934910@qq.com
  */
 
 public class MainPresenter extends BasePresenterImpl<MainContract.View> implements MainContract.Presenter{

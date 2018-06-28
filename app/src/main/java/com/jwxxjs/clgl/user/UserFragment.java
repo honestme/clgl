@@ -13,7 +13,7 @@ import com.jwxxjs.clgl.mvp.MVPBaseFragment;
 
 /**
  * MVPPlugin
- *  邮箱 784787081@qq.com
+ *  邮箱 1151934910@qq.com
  */
 
 public class UserFragment extends MVPBaseFragment<UserContract.View, UserPresenter> implements UserContract.View {
@@ -38,5 +38,10 @@ public class UserFragment extends MVPBaseFragment<UserContract.View, UserPresent
     @Override
     protected int getContentViewId() {
         return R.layout.fragment_personal;
+    }
+
+    @Override
+    public void finishCreateView(Bundle state) {
+
     }
 }

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/navigation_header_height">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_primary">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+
+        <com.jwxxjs.clgl.widgets.CircleImageView
+            android:id="@+id/user_avatar_view"
+            android:layout_width="@dimen/navigation_avatar_size"
+            android:layout_height="@dimen/navigation_avatar_size"
+            android:layout_gravity="start|top"
+            android:layout_marginEnd="@dimen/activity_vertical_margin"
+            android:layout_marginStart="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/default_grow_margin"
+            android:src="@drawable/ic_account_box_black_24dp"
+            app:border_color="@android:color/white"
+            app:border_width="1dp" />
+
+    <LinearLayout
+            android:id="@+id/subtitle_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/drawer_user_info"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="@dimen/default_general_margin"
+            android:background="?attr/selectableItemBackground"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/default_tiny_padding">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/default_tiny_padding">
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/log_out"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/default_small_text_size" />
+
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/user_other_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/default_tiny_margin"
+                android:textColor="@color/white"
+                android:textSize="@dimen/navigation_subtitle_secondary_text_size" />
+
+
+        </LinearLayout>
+   </LinearLayout>
+</FrameLayout>

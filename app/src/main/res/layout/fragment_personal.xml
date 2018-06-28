@@ -1,46 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+<LinearLayout android:orientation="vertical" android:background="@color/color_primary" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <RelativeLayout android:background="@color/theme_color" android:layout_width="fill_parent" android:layout_height="103.0dip">
-        <RelativeLayout android:id="@id/rl" android:background="@mipmap/usercenter_avatar_bg" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginLeft="42.0px" android:layout_centerVertical="true">
-        </RelativeLayout>
-        <TextView android:textSize="18.0sp" android:textColor="@color/login_demo" android:id="@id/tv_plate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0px" android:layout_marginTop="55.0px" android:layout_toRightOf="@id/rl" />
-        <TextView android:textSize="14.0sp" android:textColor="@color/login_demo" android:id="@id/tv_plate_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10" android:layout_marginTop="@dimen/dimen_8" android:layout_toRightOf="@id/rl" android:layout_below="@id/tv_plate" />
-    </RelativeLayout>
-    <LinearLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_74" android:weightSum="3.0">
-        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.9">
-            <TextView android:id="@id/tv_plate_number" android:text="" style="@style/preson_text_style" />
-            <TextView android:text="@string/car_count" style="@style/preson_text_title_style" />
-        </LinearLayout>
-        <ImageView android:layout_gravity="center" android:background="@color/grayShallowColor" android:layout_width="@dimen/dimen_0.5" android:layout_height="@dimen/dimen_35" android:contentDescription="@null" />
-        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
-            <TextView android:id="@id/tv_mile_day" android:text="" style="@style/preson_text_style" />
-            <TextView android:text="@string/day_mileage_notice" style="@style/preson_text_title_style" />
-        </LinearLayout>
-        <ImageView android:layout_gravity="center" android:background="@color/grayShallowColor" android:layout_width="@dimen/dimen_0.5" android:layout_height="@dimen/dimen_35" android:contentDescription="@null" />
-        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.1">
-            <TextView android:id="@id/tv_mile_moth" android:text="" style="@style/preson_text_style" />
-            <TextView android:text="@string/month_mileage_notice" style="@style/preson_text_title_style" />
-        </LinearLayout>
-    </LinearLayout>
-    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16">
-        <RelativeLayout android:id="@id/rl_push_message" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_55">
-            <ImageView android:id="@id/iv_start_push" android:layout_width="@dimen/dimen_30" android:layout_height="@dimen/dimen_30" android:layout_marginLeft="@dimen/dimen_15" android:src="@mipmap/user_list_mes" android:layout_centerVertical="true" android:contentDescription="@null" />
-            <TextView android:textSize="16.0sp" android:textColor="@color/login_demo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_5" android:text="@string/push_title" android:layout_toRightOf="@id/iv_start_push" android:layout_centerVertical="true" />
-            <ImageView android:layout_width="@dimen/dimen_16" android:layout_height="@dimen/dimen_21" android:layout_marginRight="@dimen/dimen_10" android:src="@mipmap/user_list_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" />
-        </RelativeLayout>
-        <View android:background="@color/background" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/dimen_15" android:contentDescription="@null" />
-        <RelativeLayout android:id="@id/driving_logbook" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_55">
-            <ImageView android:id="@id/iv_driving_logbook" android:layout_width="@dimen/dimen_30" android:layout_height="@dimen/dimen_30" android:layout_marginLeft="@dimen/dimen_15" android:src="@mipmap/icon_car_used_record" android:layout_centerVertical="true" android:contentDescription="@null" />
-            <TextView android:textSize="16.0sp" android:textColor="@color/login_demo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_5" android:text="@string/driving_logbook" android:layout_toRightOf="@id/iv_driving_logbook" android:layout_centerVertical="true" />
-            <ImageView android:layout_width="@dimen/dimen_16" android:layout_height="@dimen/dimen_21" android:layout_marginRight="@dimen/dimen_10" android:src="@mipmap/user_list_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" />
-        </RelativeLayout>
-        <View android:background="@color/background" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/dimen_15" android:contentDescription="@null" />
-        <RelativeLayout android:id="@id/rl_update_pwd" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_55">
-            <ImageView android:id="@id/iv_start" android:layout_width="@dimen/dimen_30" android:layout_height="@dimen/dimen_30" android:layout_marginLeft="@dimen/dimen_15" android:src="@mipmap/user_icon_password" android:layout_centerVertical="true" android:contentDescription="@null" />
-            <TextView android:textSize="16.0sp" android:textColor="@color/login_demo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_5" android:text="@string/change_pwd_title" android:layout_toRightOf="@id/iv_start" android:layout_centerVertical="true" />
-            <ImageView android:layout_width="@dimen/dimen_16" android:layout_height="@dimen/dimen_21" android:layout_marginRight="@dimen/dimen_10" android:src="@mipmap/user_list_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" />
-        </RelativeLayout>
-    </LinearLayout>
-    <TextView android:textSize="16.0sp" android:textColor="@color/login_demo" android:gravity="center" android:id="@id/tv_login_out" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_44" android:layout_marginTop="@dimen/dimen_16" android:text="@string/exit_login" />
+
 </LinearLayout>

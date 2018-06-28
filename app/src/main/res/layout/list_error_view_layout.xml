@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/mc3" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/load_error_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/list_error_img" android:layout_centerHorizontal="true" />
-    <TextView android:textSize="@dimen/t5" android:textColor="@color/ac7" android:gravity="center" android:id="@id/load_error_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_ss_huge" android:layout_marginBottom="@dimen/spacing_ss_huge" android:text="@string/list_load_error" />
-    <Button android:textSize="@dimen/t4" android:textColor="@color/mc4" android:id="@id/listReloadBtn" android:background="@drawable/bg_btn_bluesolid" android:paddingLeft="@dimen/spacing_10" android:paddingRight="@dimen/spacing_10" android:layout_width="wrap_content" android:layout_height="@dimen/spacing_40" android:text="@string/list_reload_refresh" />
-</LinearLayout>

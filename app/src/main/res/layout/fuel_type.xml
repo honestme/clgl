@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:background="@color/transparency" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <View style="@style/line_horizontal" />
-    <TextView android:textSize="@dimen/t3" android:textColor="@color/mc2" android:gravity="center" android:id="@id/fuel_type_1" android:background="@color/mc4" android:padding="@dimen/dimen_12" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-    <View style="@style/line_horizontal" />
-    <TextView android:textSize="@dimen/t3" android:textColor="@color/mc2" android:gravity="center" android:id="@id/fuel_type_2" android:background="@color/mc4" android:padding="@dimen/dimen_12" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-    <View android:id="@id/bottom_view" android:background="@color/mc2" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:alpha="0.6" />
-</LinearLayout>

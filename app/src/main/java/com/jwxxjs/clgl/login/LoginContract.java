@@ -5,27 +5,39 @@ import android.content.Context;
 import com.jwxxjs.clgl.mvp.BasePresenter;
 import com.jwxxjs.clgl.mvp.BaseView;
 
+import java.util.List;
+
 /**
  * MVPPlugin
- *  邮箱 784787081@qq.com
+ *  邮箱 1151934910@qq.com
  */
 
 public class LoginContract {
     interface View extends BaseView {
-        public void login();
+        void login();
 
-        public void forgotPassword();
+        void loginSucceed();
 
-        public void loginFailed(int code);
+        void forgotPassword();
+
+        void loginFailed();
+
+        void showLoginProgress();
+
+        void hideLoginProgress();
+
+
     }
 
     interface  Presenter extends BasePresenter<View> {
-        public int login(String userName,String password);
+        int login(String userName, String password);
 
-        public void forgotPassword();
+        void forgotPassword();
 
-        public int checkoutInput(String userName);
+        void rememberPassword(String pwd);
 
-        public void rememberPassword(String pwd);
+        void accountVerify(String userName, String password);
+
+        List<UserModel> getAccountData();
     }
 }

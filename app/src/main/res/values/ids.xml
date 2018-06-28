@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <item type="id" name="login_progress">false</item>
+    <item type="id" name="message_category_list">false</item>
+    <item type="id" name="alert_list">false</item>
+
     <item type="id" name="action_bar_activity_content" />
     <item type="id" name="action_bar_spinner" />
     <item type="id" name="action_menu_divider" />
@@ -88,7 +92,6 @@
     <item type="id" name="tv_call_title">false</item>
     <item type="id" name="tv_call">false</item>
     <item type="id" name="header">false</item>
-    <item type="id" name="search_view">false</item>
     <item type="id" name="province_list">false</item>
     <item type="id" name="search_control_layout">false</item>
     <item type="id" name="province_and_city_list">false</item>

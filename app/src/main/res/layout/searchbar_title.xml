@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <RelativeLayout android:gravity="center_horizontal" android:background="@drawable/white_rectangle" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <ImageView android:id="@id/close" android:background="@drawable/btn_edittext_clear" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="4.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@id/close" />
-        <EditText android:textSize="16.0sp" android:gravity="center" android:id="@id/inputbox" android:background="@null" android:layout_width="fill_parent" android:layout_height="32.0dip" android:hint="@string/search_hint" android:singleLine="true" android:maxLength="7" android:layout_toLeftOf="@id/close" android:layout_centerVertical="true" android:imeOptions="actionSearch" />
-    </RelativeLayout>
-    <ImageView android:layout_gravity="center" android:id="@id/search" android:background="@drawable/search_icon" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="36.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:contentDescription="@id/search" />
-</FrameLayout>

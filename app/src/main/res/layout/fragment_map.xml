@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/mapview_main_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <!--<etgps.etgps.cn.ui.widget.TitleBar android:id="@id/title_bar" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_44" />-->
+        <com.baidu.mapapi.map.MapView android:id="@id/bmapView" android:clickable="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal"
+                      android:id="@id/bottom_seek_view" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/mapfragement_searchEditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/search_hint"
+                android:textColorHint="@color/car_status_run"
+                android:textColor="@color/ac3"
+                android:layout_weight="0"/>
+            <Button
+                android:id="@+id/mapfragment_searchBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/search_hint"
+                android:layout_weight="0.5"/>
+            <Button
+                android:id="@+id/mapfragment_location"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="定位"
+                android:layout_weight="0.5"/>
+            <Button
+                android:id="@+id/mapfragment_track"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="轨迹查询"
+                android:layout_weight="0.5"/>
+            <Button
+                android:id="@+id/mapfragment_trackStart"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="开始时间"
+                />
+            <Button
+                android:id="@+id/mapfragment_trackEnd"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="结束时间"
+                />
+            <Button
+                android:id="@+id/mapfragment_changeMap"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="切换地图"
+                android:layout_weight="0.5"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

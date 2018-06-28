@@ -200,10 +200,7 @@ public final class AppUtils {
             File dir = new File("/sys/devices/system/cpu/");
             File[] files = dir.listFiles(new FileFilter() {
                 @Override public boolean accept(File pathname) {
-                    if (Pattern.matches("cpu[0-9]", pathname.getName())) {
-                        return true;
-                    }
-                    return false;
+                    return Pattern.matches("cpu[0-9]", pathname.getName());
                 }
             });
             return files.length;

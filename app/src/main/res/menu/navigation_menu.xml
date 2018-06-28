@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/item_home"
+            android:checked="true"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/menu_home">
+        </item>
+
+        <item
+            android:id="@+id/item_personal_info"
+            android:checked="false"
+            android:icon="@drawable/ic_person_pin_black_24dp"
+            android:title="@string/menu_personal_info">
+        </item>
+
+        <item
+            android:id="@+id/item_cache"
+            android:checked="false"
+            android:icon="@drawable/ic_cached_black_24dp"
+            android:title="@string/menu_cache">
+        </item>
+    </group>
+
+    <group>
+        <item
+            android:id="@+id/item_vehicle_info"
+            android:checked="false"
+            android:icon="@drawable/ic_info_black_24dp"
+            android:title="@string/menu_vehicle_info">
+        </item>
+
+        <item
+            android:id="@+id/item_alert_info"
+            android:checked="false"
+            android:icon="@drawable/ic_error_black_24dp"
+            android:title="@string/menu_alert_info">
+        </item>
+
+        <item
+            android:id="@+id/item_device_online"
+            android:checked="false"
+            android:icon="@drawable/ic_line_weight_black_24dp"
+            android:title="@string/menu_device_online">
+        </item>
+
+        <item
+            android:id="@+id/item_vehicle_track"
+            android:checked="false"
+            android:icon="@drawable/ic_art_track_black_24dp"
+            android:title="@string/menu_vehicle_track">
+        </item>
+    </group>
+
+    <group>
+        <item
+            android:id="@+id/item_setting"
+            android:checked="false"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="@string/menu_setting"></item>
+    </group>
+</menu>

@@ -7,12 +7,12 @@ import com.jwxxjs.clgl.mvp.BaseView;
 
 /**
  * MVPPlugin
- *  邮箱 784787081@qq.com
+ *  邮箱 1151934910@qq.com
  */
 
 public class MainContract {
     interface View extends BaseView {
-        
+        void showDrawerlayout();
     }
 
     interface  Presenter extends BasePresenter<View> {

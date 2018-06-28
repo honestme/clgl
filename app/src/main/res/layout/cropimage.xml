@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <view android:id="@id/image" android:background="#55000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ll_bottom" class="com.wlqq.picture.crop.CropImageView" />
-    <LinearLayout android:orientation="horizontal" android:id="@id/ll_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
-        <Button android:textSize="24.0sp" android:textColor="@android:color/white" android:id="@id/discard" android:background="@drawable/button_bg" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:text="@string/cancel" />
-        <Button android:textSize="24.0sp" android:textColor="@android:color/white" android:id="@id/save" android:background="@drawable/button_bg" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="@string/save" />
-    </LinearLayout>
-</RelativeLayout>

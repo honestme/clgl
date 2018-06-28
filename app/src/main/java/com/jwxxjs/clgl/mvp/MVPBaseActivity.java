@@ -8,27 +8,32 @@ import android.util.Log;
 import com.hannesdorfmann.mosby3.mvp.MvpActivity;
 
 import butterknife.ButterKnife;
+import butterknife.Unbinder;
 
 
 /**
  * MVPPlugin
- *  邮箱 784787081@qq.com
+ *  邮箱 1151934910@qq.com
  */
 public abstract class MVPBaseActivity<V extends BaseView,P extends com.jwxxjs.clgl.mvp.BasePresenterImpl<V>> extends MvpActivity<V,P> implements BaseView {
+    private Unbinder mUnbinder;
     //初始化
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(getContentViewId());
-        ButterKnife.bind(this);
+        mUnbinder = ButterKnife.bind(this);
         initAllMembers(savedInstanceState);
+        initToolbar();
         ActivityCollector.addActivity(this);
+
         Log.d("BaseActivity",getClass().getSimpleName());
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        mUnbinder.unbind();
         ActivityCollector.removeActivity(this);
     }
 
@@ -37,6 +42,11 @@ public abstract class MVPBaseActivity<V extends BaseView,P extends com.jwxxjs.cl
     public abstract P createPresenter();
 
     protected abstract void initAllMembers(Bundle bundle);
+
+
     protected abstract int getContentViewId();
+
+
+    public abstract void initToolbar();
 }
 
